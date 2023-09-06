@@ -1,0 +1,202 @@
+@import "normalize.scss"
+@import "reset.scss"
+
+$color-white: #F6F3E3
+$color-black:#241D1C
+$color-grey: #BFBDB2
+
+@font-face 
+    font-family: Raleway
+    src: url("../fonts/Raleway-Regular.ttf")
+    font-weight: 400
+
+html
+    font-family: Raleway
+    color: $color-white
+
+* 
+    box-sizing: border-box
+
+body
+    background: $color-black
+
+.container
+    max-width: 1216px
+    margin: 0 auto
+    margin-bottom: 124px
+
+.main-section
+    &__header
+        min-height: 73px
+        border-bottom: 1px solid #BFBDB2
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-bottom: 62px
+    &__text
+        font-size: 54px
+        margin-bottom: 36px
+    &__carousel
+        img
+            height: 690px
+            width: 692
+
+.nav-menu
+    font-size: 14px
+    &__list
+        display: flex
+        align-items: center
+    &__item
+        margin-right: 33px
+        &:nth-child(2)
+            margin-right: 54px
+        &:last-child
+            margin-right: 0
+
+
+
+.button
+    position: relative
+    color: $color-black
+    width: 185px
+    height: 40px
+    padding-top: 13px
+    border-radius: 4px
+    background: $color-white
+    text-align: center
+    &_noactive
+        background: #78736d
+
+
+.carousel-container
+    height: 690px
+    padding: 0
+    margin: 0
+a
+    text-decoration: none
+
+.price-section
+    &__title
+        font-size: 40px
+        margin-bottom: 16px
+    &__text
+        font-size: 16px
+        margin-bottom: 40px
+    &__content-container
+        height: 393px
+        display: flex
+        justify-content: space-between
+    &__price-list
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+
+.price-list
+    width: 592px
+    &__list-item
+        display: flex
+        justify-content: space-between
+        font-size: 14px
+        padding-bottom: 7px
+        border-bottom: 1px $color-white solid
+        margin-bottom: 24px
+        &:last-child
+            margin-bottom: 0
+
+.description-section
+    &__title
+        font-size: 40px
+        margin-bottom: 24px
+    &__text
+        font-size: 16px
+        line-height: 150%
+        width: 696px
+        margin-bottom: 72px
+
+.icon-box
+    display: flex
+    justify-content: space-between
+    &__item
+        display: flex
+    &__icon
+        margin-right: 16px
+    &__description
+        display: flex
+        flex-direction: column
+        justify-content: center
+    &__title
+        margin-bottom: 8px
+        font-size: 22px
+    &__text
+        font-size: 16px
+
+.custom-carousel
+    display: flex
+    justify-content: space-between
+    &__side-image
+        img
+            width: 280px
+            height: 326px
+    &__arrow
+        text-align: center
+        &_rotate
+            transform: rotate(180deg)
+        img
+            width: 64px
+
+.book-section
+    &__title
+        font-size: 40px
+        margin-bottom: 24px
+    &__book-instruction
+        list-style-type: arabic
+        list-style-position: inside
+        margin-bottom: 72px
+        li
+            font-size: 16px
+            margin-bottom: 12px
+            &:last-child
+                margin-bottom: 0
+    &__service-selector
+        margin-bottom: 64px
+    &__master-selector
+        margin-bottom: 64px
+
+.order-selector
+    &__title
+        font-size: 22px
+        margin-bottom: 24px
+    &__list
+        margin-bottom: 24px
+        &:last-child
+            margin-bottom: 0
+    &__item
+        display: inline-flex
+        padding: 16px 24px
+        align-items: flex-start
+        border-radius: 36px
+        border: 0.8px solid $color-grey
+        margin-right: 8px
+        margin-bottom: 8px
+        &:hover
+            background: $color-white
+            color: $color-black
+        &_img
+            padding: 6px 24px 6px 8px
+            align-items: center
+            img
+                margin-right: 8px
+
+.footer-section
+    max-width: 1216px
+    margin: 0 auto
+    margin-bottom: 24px
+    border-top: 1px $color-grey solid
+    padding-top: 16px
+    &__content-container
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-bottom: 40px
+    &__copyright-info
+        font-size: 12px
