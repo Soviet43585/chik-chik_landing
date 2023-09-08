@@ -138,8 +138,7 @@ a
         display: flex
         flex-direction: column
         justify-content: flex-start
-        align-items: center
-        
+        align-items: center   
     &__side-image
         width: 280px
         height: 326px
@@ -147,6 +146,8 @@ a
     &__arrow
         text-align: center
         width: 64px
+    &__mobile
+        display: none
 
 .book-section
     &__title
@@ -235,7 +236,6 @@ a
             height: 298px
             margin-bottom: 63px
         &__arrow
-            text-align: center
             width: 64px
     .price-section
         &__content-container
@@ -294,7 +294,6 @@ a
             height: 168px
             margin-bottom: 92px
         &__arrow
-            text-align: center
             width: 40px
     .price-section
         &__title
@@ -391,16 +390,15 @@ a
             width: 272px
             height: 333px
         &__main-image
-            order: 1
             width: 272px
             height: 317px
         &__side-block
-            display: block
-            order: 2
-        &__side-image 
             display: none
+        &__mobile
+            width: 272px
+            display: flex
+            justify-content: space-between
         &__arrow
-            text-align: center
             img
                 width: 40px
     .price-section
