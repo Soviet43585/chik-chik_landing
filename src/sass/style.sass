@@ -147,9 +147,6 @@ a
     &__arrow
         text-align: center
         width: 64px
-        &_rotate
-            img
-                transform: rotate(180deg)
 
 .book-section
     &__title
@@ -240,9 +237,6 @@ a
         &__arrow
             text-align: center
             width: 64px
-            &_rotate
-                img
-                    transform: rotate(180deg)
     .price-section
         &__content-container
             height: 393px
@@ -302,9 +296,6 @@ a
         &__arrow
             text-align: center
             width: 40px
-            &_rotate
-                img
-                    transform: rotate(180deg)
     .price-section
         &__title
             font-size: $font-size-h2
@@ -396,26 +387,22 @@ a
     .custom-carousel
         display: flex
         flex-wrap: wrap
-        justify-content: space-between
         &__main-block
             width: 272px
             height: 333px
         &__main-image
-            order: -1
+            order: 1
             width: 272px
             height: 317px
         &__side-block
-            text-align: top
-            order: 1
+            display: block
+            order: 2
         &__side-image 
             display: none
         &__arrow
             text-align: center
             img
                 width: 40px
-            &_rotate
-                img
-                    transform: rotate(180deg)
     .price-section
         &__title
             font-size: $font-size-h2
